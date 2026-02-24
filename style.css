@@ -1,0 +1,138 @@
+body{
+    width: auto;
+    height: auto;
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    height: 80px;
+    width: 120px;
+}
+.events{
+    background-color:aqua;
+    text-align: center;
+    font-size: 30px;
+}
+.intro{
+    text-align: center;
+    background-color: blueviolet;
+    padding: 20px;
+}
+.intro h3{
+    font-size: 30px;
+}
+.intro p{
+    text-align: center;
+    font-size: 20px;
+    
+}
+.team{
+    width: 100%;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    /*font-family: ;*/
+}
+.container{
+    width:80%;
+    margin:auto;
+}
+.title{
+    text-align: center;
+}
+.row{
+    width: 60%;
+    margin: auto;
+}
+.row .title{
+    text-align: center;
+    
+    margin-top: 50px;
+}
+.row .title h1{
+    font-size: 45px;
+    /*color: ;*/
+    letter-spacing: 1.5px;
+}
+
+.team-card{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.card{
+    width:100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.image img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.content{
+    width:100%;
+    text-align: center;
+}
+.content h3{
+    font-size: 35px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    /*color: ;*/
+}
+.content h4{
+    font-size: 16px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    /*color: ;*/
+    /*font-family: ;*/
+}
+.content p{
+    font-size: 15px;
+    margin:16px 0px;
+    line-height: 1.5;
+    /*color: ;*/
+}
+.social{
+    margin-top: 20px;
+}
+.social a{
+    font-size: 18px;
+    padding:0px 5px;
+    /*color: ;*/
+}
+.social a:hover{
+    /*color: ;*/
+    transition: 0.5s ease;
+}
+
+.social img{
+    width: 30px;
+    height: 30px;
+}
+
+.donation{
+    background-color: crimson;
+    text-align: center;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 900px){
+    .team-card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    .team-card{
+        grid-template-columns: 1fr;
+    }
+    .row .title h1{
+        font-size: 35px;
+    }
+}
