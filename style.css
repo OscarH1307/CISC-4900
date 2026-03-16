@@ -9,10 +9,27 @@ body{
     height: 80px;
     width: 120px;
 }
-.events{
-    background-color:aqua;
+
+.donation{
+    background-image:url("pictures/Saenger.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+    background-color: crimson;
     text-align: center;
     font-size: 30px;
+    filter: grayscale(100%) blur(5px);
+}
+
+.events{
+    background-color:aqua;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:40px;
+    margin-top: 50px;
 }
 .intro{
     text-align: center;
@@ -115,12 +132,6 @@ body{
 .social img{
     width: 30px;
     height: 30px;
-}
-
-.donation{
-    background-color: crimson;
-    text-align: center;
-    font-size: 30px;
 }
 
 @media screen and (max-width: 900px){
