@@ -4,38 +4,37 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <script defer src="app.js"></script>
+
         <title>Pine Bluff Film Festival</title>
     </head>
     <body>
-        <div class="logo">
-            <img src="pictures/PineBluff.png">
-        </div>
-        <!--Donation-->
-        <section class="hidden">
-            <div class="donation">
-                <div class="donationContent">
-                    <h1>Donation</h1>
-                    <p>Please help us prevent Pine Bluff Film Festival from
-                        becoming a memory and let it be an important landmark by
-                        supporting us!
-                    </p>
-                </div>
+        <!--Preloader-->
+        <div id="preloader">
+            <div class="loader-content">
+                <!-- Replace with your curtain gif -->
+                <img src="pictures/curtainOFC.gif" alt="Loading..." id="preloader-gif">
             </div>
-        </section>
-        <!--End of Donation-->
-
-        <!--Events-->
-         <div class="events">
-            <a href="" class="event1"><h1>Past Presentation</h1></a>
-            <p>major events</p>
-            <p>missing coming attraction</p>
         </div>
-        <!--End of Events-->
-
+        <!--End of Preloader-->
+        <section>
+        <!--NavBar-->
+        
+            <div class="header">
+                <nav id="navbar">
+                    <img src="pictures/PineBluff.png" class="logo">
+                    <ul id="menu">
+                        <li>Past Presentations</li>
+                        <li>Major Events</li>
+                        <li>Coming Attractions</li>
+                    </ul>
+                </nav>
+            </div>
+        <!--End of Navbar-->
+        </section>
         <!--Intro-->
-        <section class="hidden2">
+        <section class="hidden">
             <div class="intro">
-                <h3>Welcome to The Pine Bluff Flim Festival</h3>
+                <h1>Welcome <br>to<br>The Pine Bluff Flim Festival</h3>
                 <p>The Pine Bluff Silent Film Festival has been held annually since its inception in 1994. It is thought by some to be the 
                     oldest silent film festival in the United States in which the silent films are shown with full orchestral accompaniment. 
                     From inauspicious beginnings, the festival has grown to have an international reputation and has been recognized at major 
@@ -47,8 +46,12 @@
                 <iframe width="450" height="300" src="https://www.youtube.com/embed/OS6s929KJhg" title="Saenger Theatre 3D Scan 12/19/2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             
                     <p>Here is a great 3D Scan of the Saenger Theatre by <a href="https://www.youtube.com/channel/UC2yqbNU2XfGTPu7MO6cEDXw" title="Luke Stevenson">Luke Stevenson</a></p>
-            </div>
+            
+                    <h1>Follow us!</h1>
+            
+                </div>
         </section>
+        
         <!--End of Intro-->
 
         <!--Team-->
@@ -159,6 +162,19 @@
         
                 <!--END TEAM CARD-->
             </section>
+            <!--Donation-->
+        <section class="hidden2">
+            <div class="donation">
+                <div class="donationContent">
+                    <h1>Donation</h1>
+                    <p>Please help us prevent Pine Bluff Film Festival from
+                        becoming a memory and let it be an important landmark by
+                        supporting us!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--End of Donation-->
         </div>
     </body>
 </html>
