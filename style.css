@@ -9,6 +9,10 @@ body{
     background-blend-mode: multiply;
     z-index: -1;
 }
+a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit;        /* Removes blue; link takes color of parent text */
+}
 /*Font style, Size*/
 
 /* Preloader */
@@ -65,7 +69,7 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 20px 30px;
-    color: white;
+    color: #F5F5DC;
 
 }
 
@@ -82,13 +86,6 @@ nav.sticky{
 }
 
 /* End of Navbar*/
-
-/* Donation */
-
-
-
-/* End of Donation */
-
 
 /* Intro */
 .intro{
@@ -115,6 +112,10 @@ nav.sticky{
     padding:0px;
     box-sizing: border-box;
     /*font-family: ;*/
+}
+.team h1{
+    font-size: 48px;
+    color:#D4AF37;
 }
 .container{
     width:80%;
@@ -195,10 +196,69 @@ nav.sticky{
 }
 
 .social img{
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
 }
 /* End of Team*/
+
+/* Donation */
+.donate{
+    text-align:center;
+}
+.donate h1{
+    font-size: 48px;
+    color:#D4AF37;
+}
+.donate p{
+    font-size: 27px; /*16*/
+    color: #F5F5DC;
+}
+.checkout-card{ 
+    background: white; 
+    padding: 30px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    width: 350px; 
+    text-align: center; 
+}
+.amount-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+    margin: 20px 0; 
+    text-align: center; 
+}
+.amt-btn { 
+    padding: 12px; 
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+    background: white; 
+    cursor: pointer; 
+    font-weight: bold; 
+}
+.amt-btn.active { 
+    border-color: #D4AF37; 
+    color: #D4AF37; 
+    background: #F5F5DC; 
+}
+#custom-amt { 
+    grid-column: span 2; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+}
+.pay-btn { 
+    width: 100%; 
+    padding: 15px; 
+    background: #D4AF37; 
+    color: F5F5DC; 
+    border: none; 
+    border-radius: 6px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+/* End of Donation */
 
 /* Scrolling */
 section {
@@ -217,6 +277,7 @@ section {
 }
 
 .hidden2 {
+    text-align: center; 
     min-height: 110vh;
   opacity: 0;
   filter: blur(5px);
